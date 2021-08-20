@@ -1,6 +1,17 @@
 <template>
   <div class="video">
     <Jumbotron :data="data.jumbotron" />
+    <div class="container">
+      <nav class="nav my-5 justify-content-center">
+        <div
+          class="nav-item mx-3 text-uppercase"
+          v-for="(show, index) in shows"
+          :key="index"
+        >
+          {{ show }}
+        </div>
+      </nav>
+    </div>
   </div>
 </template>
 
@@ -17,20 +28,31 @@
     },
     mounted() {
       this.data = this.$store.state.video
-      this.getShows(0)
+      this.getShows()
     },
     methods: {
       getShows() {
-        const shows = this.data.videos.map((item) => {
-            for (let show in shows) {
-              console.log(show)
+        for (let video of this.data.videos) {
+          if (!this.shows.length) {
+            this.shows.push(video.show)
+          } else {
+            for (let show of this.shows) {
+              console.log(show + ' = ' + video.show)
+              if (show !== video.show) {
+                this.shows.push(video.show)
+              }
             }
-            return item.show
-        })
-        console.log(shows)
+          }
+        }
+        console.log(this.shows)
       }
     }
   }
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+  @import '../styles/colors';
+  .nav-item {
+    color: $color-red;
+  }
+</style>
