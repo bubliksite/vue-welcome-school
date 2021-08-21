@@ -31,7 +31,7 @@ export default {
     contacts: {
       address:
         '141305, Россия , г. Сергиев Посад, <br />' + 'ул. Центральная, д.1',
-      email: 'welcomeschoolsp@gmail.com',
+      email: 'info@w-school.ru',
       phone: '+7 (915) 095-13-66',
       schedule:
         'Пн - Пт: 10:00 – 20:00 <br />' +
