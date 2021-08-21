@@ -12,14 +12,14 @@ export default {
         link: 'courses'
       },
       {
-        title: 'Видео',
-        type: 'router-link',
-        link: 'VideoBlog'
-      },
-      {
         title: 'Команда',
         type: 'anchor',
         link: 'team'
+      },
+      {
+        title: 'Видео',
+        type: 'router-link',
+        link: 'VideoBlog'
       },
       {
         title: 'Записаться',
