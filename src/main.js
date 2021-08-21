@@ -4,6 +4,8 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
+import VueYoutube from 'vue-youtube'
+
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -21,3 +23,5 @@ new Vue({
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+
+Vue.use(VueYoutube)

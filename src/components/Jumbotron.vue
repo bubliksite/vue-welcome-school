@@ -26,7 +26,7 @@
     height: calc(100vh - 120px);
     max-height: 100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-size: cover;
     color: #fff;
 

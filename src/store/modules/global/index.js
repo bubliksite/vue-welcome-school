@@ -22,7 +22,7 @@ export default {
         link: 'team'
       },
       {
-        title: 'Связаться с нами',
+        title: 'Записаться',
         type: 'anchor',
         button: true,
         link: 'footer'

@@ -26,4 +26,7 @@
     font-size: 18px;
     line-height: 24px;
   }
+  img {
+    max-width: 100%;
+  }
 </style>

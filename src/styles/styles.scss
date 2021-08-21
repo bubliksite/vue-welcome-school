@@ -31,6 +31,7 @@ section {
 .btn {
   border-radius: 30px;
   padding: 8px 13px;
+  white-space: nowrap;
   &-default {
     background-color: $color-red;
     font-weight: bold;

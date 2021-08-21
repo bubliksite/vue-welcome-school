@@ -30,10 +30,20 @@
 
 <style lang="scss" scoped>
   @import '../styles/styles';
+  .mobile-menu-item {
+    a {
+      font-size: 32px;
+      line-height: 64px;
+    }
+    .btn {
+      margin-top: 50px;
+      padding: 0 30px;
+    }
+  }
   a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     &.active {
       color: $color-red;
     }

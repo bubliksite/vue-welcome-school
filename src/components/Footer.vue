@@ -28,7 +28,7 @@
             <span class="fw-bold">Время работы:</span> <br />
             <span v-html="contacts.schedule"></span>
           </p>
-          <div class="social-logo d-flex">
+          <div class="social-logo d-flex justify-content-between w-100">
             <a id="vk" href="https://vk.com/welcome_course">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,6 @@
 
 <style scoped lang="scss">
   .social-logo > a > svg {
-    margin-right: 30px;
     font-size: 60px;
     background-color: #aaa;
     padding: 15px;
@@ -112,6 +111,9 @@
   }
   p {
     margin: 40px 0;
+    &.lead {
+      font-size: 16px;
+    }
   }
   a {
     text-decoration: none;
