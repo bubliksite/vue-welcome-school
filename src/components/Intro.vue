@@ -3,7 +3,7 @@
     <h1>{{ data.title }}</h1>
     <div class="row">
       <div class="col-md-10">
-        <p v-html="data.description"></p>
+        <div class="description" v-html="data.description"></div>
       </div>
       <div class="col-md-2 text-end">
         <img :src="data.image" alt="Welcome school" />

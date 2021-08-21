@@ -17,27 +17,34 @@
         </nav>
         <div class="mobile-menu d-lock d-md-none">
           <div class="open-icon" @click="toggleMobileMenu">
-            <BIconList font-scale="3"/>
+            <BIconList font-scale="3" />
           </div>
           <div class="menu" v-if="mobileMenuIsOpen">
-            <div class="close-icon p-2 d-flex justify-content-center align-items-center" @click="toggleMobileMenu">
-              <BIconXOctagon/>
+            <div
+              class="close-icon p-2 d-flex justify-content-center align-items-center"
+              @click="toggleMobileMenu"
+            >
+              <BIconXOctagon />
             </div>
             <ul class="list-unstyled mobile-menu">
-              <li v-for="(item, index) in navs" :key="index">
+              <li
+                v-for="(item, index) in navs"
+                :key="index"
+                @click="toggleMobileMenu"
+              >
                 <HeaderItem
                   class="ms-5"
-                  :class="{'mobile-menu-item' : mobileMenuIsOpen}"
+                  :class="{'mobile-menu-item': mobileMenuIsOpen}"
                   :key="index"
                   :item="item"
-              />
+                />
               </li>
               <ul class="contacts list-unstyled mt-5 text-center fw-bold">
                 <li>
-                  <a :href="`mailto:${contacts.email}`">{{contacts.email}}</a>
+                  <a :href="`mailto:${contacts.email}`">{{ contacts.email }}</a>
                 </li>
                 <li>
-                  <a :href="`tel:${contacts.phone}`">{{contacts.phone}}</a>
+                  <a :href="`tel:${contacts.phone}`">{{ contacts.phone }}</a>
                 </li>
               </ul>
             </ul>
@@ -77,7 +84,7 @@
 </script>
 
 <style scoped lang="scss">
-  .mobile-menu      {
+  .mobile-menu {
     .open-icon {
       color: #ca2027;
       cursor: pointer;
